@@ -1,0 +1,16 @@
+@use "../../styles/variables" as *;
+
+.sidebar{
+    background: $white-background;
+    width: 18vw;
+    position: fixed;
+    height: 100vh;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+    padding: 1rem;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}

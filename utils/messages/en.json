@@ -1,0 +1,12 @@
+{
+    "Sidebar": {
+        "switch_organization": "Switch Organization",
+        "dashboard": "Dashboard",
+        "customers": "Customers",
+        "users": "Users",
+        "businesses": "Businesses",
+        "organization": "Organization",
+        "settings": "Settings",
+        "preferences": "Preferences"
+    }
+}

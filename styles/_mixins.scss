@@ -1,4 +1,4 @@
-@mixin fluid_view($properties, $min-value, $max-value, $min-screen: 300px, $max-screen: 1600px) {
+@mixin fluidView($properties, $min-value, $max-value, $min-screen: 300px, $max-screen: 1600px) {
 	& {
 		@each $property in $properties {
 			#{$property}: $min-value;
