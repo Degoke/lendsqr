@@ -83,7 +83,7 @@ export default function FilterMenu({ isOpen, toggleFilterMenu }: Props) {
         <label>Organization</label>
         <select value={formData.orgName} onChange={handleChange} name="orgName">
           <option value="">select</option>
-          {orgs.map((org) => (
+          {orgs?.map((org) => (
             <option value={org} key={org}>
               {org}
             </option>
