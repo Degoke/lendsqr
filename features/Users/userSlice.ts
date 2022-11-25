@@ -15,7 +15,6 @@ interface UserState {
   data: {
     users: IUser[]
     userDetails: IUser | null
-    userFilters: Record<UserFilters, string>
   }
 }
 
@@ -27,14 +26,6 @@ const initialState: UserState = {
   data: {
     users: [],
     userDetails: null,
-    userFilters: {
-      organization: '',
-      email: '',
-      username: '',
-      date: '',
-      status: '',
-      phoneNumber: '',
-    },
   },
 }
 
@@ -58,6 +49,24 @@ export const userSlice = createSlice({
       if (existingUser) {
         existingUser.status = 'blacklisted'
       }
+    },
+    updateFilters(state, action) {
+      const filters = action.payload as any
+      let newUsers = {} as any
+      let counter = 0
+
+      Object.keys(filters).forEach((key) => {
+        if (filters[key] !== '') {
+          state.data.users.forEach((user: any) => {
+            const id: string = user.id
+            if (user[key] === filters[key] && !newUsers[id]) {
+              newUsers[id] = user
+              counter++
+            }
+          })
+        }
+      })
+      state.data.users = Object.values(newUsers)
     },
   },
   extraReducers(builder) {
@@ -87,9 +96,9 @@ export const userSlice = createSlice({
 
 export default userSlice.reducer
 
-export const { activateUser, blacklistUser } = userSlice.actions
+export const { activateUser, blacklistUser, updateFilters } = userSlice.actions
 
-export const getUsers = createAsyncThunk('users/all', async (filters) => {
+export const getUsers = createAsyncThunk('users/all', async () => {
   try {
     let response
     const users = localStorage.getItem('users')
@@ -124,6 +133,7 @@ export const getUser = createAsyncThunk(
 export const selectUsers = (state: RootState, payload: any) => {
   let users = state.users.data.users
   const { numberPerPage, currentPage } = payload
+
   return users.slice(
     numberPerPage * (currentPage - 1),
     numberPerPage * currentPage
@@ -135,6 +145,7 @@ export const selectTotalUsers = (state: RootState) =>
 
 export const selectActiveUsers = (state: RootState) =>
   state.users.data.users.filter((user) => user.status === 'active').length
+
 export const selectUsersWithLoans = (state: RootState) =>
   state.users.data.users.filter((user) => !!user.education.loanRepayment).length
 

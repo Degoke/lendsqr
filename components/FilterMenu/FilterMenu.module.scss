@@ -1,13 +1,13 @@
 .popover {
-  bottom: 0;
+  bottom: 2rem;
+  overflow-y: scroll;
 }
 
 .form {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
   padding: 1rem;
-  width: 300px;
+  width: 18.75rem;
 
   input,
   select {
@@ -16,8 +16,32 @@
     border-radius: 8px;
   }
 
+  input {
+    padding: 1rem;
+  }
+
+  label {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
   button {
     height: 40px;
     border-radius: 8px;
+    width: 45%;
+    margin-top: 2rem;
+  }
+
+  &_buttonClear {
+    background: none;
+    border: 1px solid #545f7d;
+    margin-right: 5%;
+  }
+
+  &_buttonGreen {
+    background: #39cdcc;
+    border: 1px solid #39cdcc;
+    color: #fff;
+    margin-left: 5%;
   }
 }

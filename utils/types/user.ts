@@ -53,9 +53,9 @@ interface UserEducation {
 }
 
 export type UserFilters =
-  | 'organization'
+  | 'orgName'
   | 'email'
-  | 'username'
-  | 'date'
+  | 'userName'
+  | 'createdAt'
   | 'status'
   | 'phoneNumber'

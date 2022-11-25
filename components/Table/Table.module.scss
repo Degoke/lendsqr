@@ -1,3 +1,5 @@
+@use '../../styles/variables' as *;
+
 .table {
   padding: 1rem;
   width: 100%;
@@ -17,6 +19,12 @@
     span {
       margin-right: 0.5rem;
     }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: $font-20;
+    text-transform: uppercase;
   }
 }
 

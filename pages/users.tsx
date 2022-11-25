@@ -24,10 +24,17 @@ import Pagination from '../components/Pagination'
 import { updateCurrentStatusMenu } from '../features/helpers/helperSlice'
 import { STATUS } from '../utils/types/status'
 import Spinner from '../components/Spinner'
+import FilterMenu from '../components/FilterMenu'
 
 function Users() {
   const [numberPerPage, setNumberPerPage] = useState(15)
   const [currentPage, setCurrentPage] = useState(1)
+
+  const [openMenu, setOpenMenu] = useState(false)
+
+  const toggleFilterMenu = () => {
+    setOpenMenu(!openMenu)
+  }
 
   const dispatch = useAppDispatch()
   const users = useAppSelector((state) =>
@@ -88,7 +95,7 @@ function Users() {
   }
 
   return (
-    <div>
+    <div className={styles.users}>
       <PageTitle title="Users" />
       <div className={styles.cards}>
         {cards.map((card) => (
@@ -101,8 +108,13 @@ function Users() {
         ))}
       </div>
       <Paper>
-        <Table users={users} />
+        <Table
+          users={users}
+          toggleFilterMenu={toggleFilterMenu}
+          openMenu={openMenu}
+        />
       </Paper>
+      <FilterMenu isOpen={openMenu} toggleFilterMenu={toggleFilterMenu} />
       <Pagination
         currentPage={currentPage}
         totalUsers={totalUsers}
