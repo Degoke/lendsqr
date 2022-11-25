@@ -1,0 +1,68 @@
+@use './variables' as *;
+
+.login {
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    height: 100vh;
+    width: 100vw;
+
+    &_right {
+      background-color: $primary-background;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      :first-child {
+        margin-bottom: 8rem;
+      }
+    }
+
+    &_left {
+      background-color: $white-background;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 70%;
+      margin: auto;
+
+      h1 {
+        font-size: $font-40;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: $font-20;
+        margin-bottom: 2rem;
+      }
+
+      input {
+        height: 50px;
+        border: 2px solid rgba(84, 95, 125, 0.15);
+        border-radius: 5px;
+        display: block;
+        width: 27.5rem;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      span {
+        color: #39cdcc;
+        font-size: $font-12;
+        display: block;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+      }
+
+      button {
+        height: 48px;
+        background: #39cdcc;
+        border: none;
+        border-radius: 8px;
+        width: 27.5rem;
+        color: #fff;
+      }
+    }
+  }
+}

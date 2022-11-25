@@ -1,0 +1,15 @@
+@use '../../styles/variables' as *;
+
+.main {
+  margin-left: 18vw;
+  padding: 2rem;
+  background: $primary-background;
+
+  @media all and (max-width: 800px) {
+    margin-left: 5rem;
+  }
+
+  @media all and (max-width: 450px) {
+    margin-left: 0;
+  }
+}

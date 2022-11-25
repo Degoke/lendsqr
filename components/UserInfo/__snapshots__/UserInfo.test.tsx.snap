@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PersonalInfo tests renders PersonalInfo component unchanged 1`] = `
+<div>
+  <div
+    class="userInfo"
+  >
+    <h2>
+      Personal Information
+    </h2>
+    <div
+      class="userInfo__information"
+    >
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          Full name
+        </p>
+        <p>
+          Darian Rolfson
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          phone number
+        </p>
+        <p>
+          (553) 208-0727 x31321
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          email address
+        </p>
+        <p>
+          Maverick.Hyatt83@gmail.com
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          bvn
+        </p>
+        <p>
+          815809412
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          gender
+        </p>
+        <p>
+          Male
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          marital status
+        </p>
+        <p>
+          -
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          children
+        </p>
+        <p>
+          None
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          Type of Residence
+        </p>
+        <p>
+          Gusikowski Locks
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UserEducation tests renders UserEducation component unchanged 1`] = `
+<div>
+  <div
+    class="userInfo"
+  >
+    <h2>
+      Education and Employment
+    </h2>
+    <div
+      class="userInfo__information"
+    >
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          Level of education
+        </p>
+        <p>
+          Bsc
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          employment status
+        </p>
+        <p>
+          Employed
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          sector of employment
+        </p>
+        <p>
+          FinTech
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          duration of employment
+        </p>
+        <p>
+          2 Years
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          office email
+        </p>
+        <p>
+          Edna4@yahoo.com
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          monthly income
+        </p>
+        <p>
+          ₦118.07 - ₦128.57
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          loan repayment
+        </p>
+        <p>
+          122.47
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UserGuarantor tests renders UserGuarantor component unchanged 1`] = `
+<div>
+  <div
+    class="userInfo"
+  >
+    <h2>
+      Guarantor
+    </h2>
+    <div
+      class="userInfo__information"
+    >
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          Full name
+        </p>
+        <p>
+          Celine Monahan
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          phone number
+        </p>
+        <p>
+          1-482-227-3654 x71086
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          email address
+        </p>
+        <p>
+          O'Hara Centers
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          relationship
+        </p>
+        <p>
+          Male
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UserSocials tests renders UserSocials component unchanged 1`] = `
+<div>
+  <div
+    class="userInfo"
+  >
+    <h2>
+      Socials
+    </h2>
+    <div
+      class="userInfo__information"
+    >
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          Twitter
+        </p>
+        <p>
+          @lendsqr
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          Facebook
+        </p>
+        <p>
+          @lendsqr
+        </p>
+      </div>
+      <div
+        class="userInfo__infoGroup"
+      >
+        <p>
+          Instagram
+        </p>
+        <p>
+          @lendsqr
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

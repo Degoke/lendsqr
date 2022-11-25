@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paper tests renders Paper component unchanged 1`] = `
+<div>
+  <div
+    class="paper undefined"
+  >
+    <div
+      data-testid="mockComponent"
+    >
+      Hello World
+    </div>
+  </div>
+</div>
+`;

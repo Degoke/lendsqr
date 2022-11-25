@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+
+  select {
+    background: rgba(33, 63, 125, 0.1);
+    border-radius: 4px;
+    padding: 0.2rem;
+    margin: 0 0.5rem;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+
+  &__button {
+    border: none;
+    margin: 0 0.1rem;
+    padding: 0 0.5rem;
+    background: none;
+  }
+
+  &__nextButton {
+    background: rgba(33, 63, 125, 0.1);
+    border-radius: 4px;
+    border: none;
+    margin: 0 0.1rem;
+    padding: 0 0.5rem;
+  }
+}
+
+.active {
+  font-weight: 600;
+}

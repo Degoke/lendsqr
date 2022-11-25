@@ -1,0 +1,23 @@
+.popover {
+  bottom: 0;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
+  width: 300px;
+
+  input,
+  select {
+    height: 40px;
+    border: 1px solid #213f7d;
+    border-radius: 8px;
+  }
+
+  button {
+    height: 40px;
+    border-radius: 8px;
+  }
+}

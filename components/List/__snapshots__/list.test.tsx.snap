@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List tests renders List component unchanged 1`] = `
+<div>
+  <div
+    class="list"
+  >
+    <p>
+      settings
+    </p>
+    <ul>
+      <li>
+        <a
+          class="item current"
+          href=""
+        >
+          <img
+            alt="preferences nav button"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+          <span>
+            preferences
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="item current"
+          href=""
+        >
+          <img
+            alt="fees and pricing nav button"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+          <span>
+            fees and pricing
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="item current"
+          href=""
+        >
+          <img
+            alt="audit logs nav button"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+          <span>
+            audit logs
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

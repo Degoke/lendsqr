@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table tests renders Table component unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <table
+      class="table"
+    >
+      <thead>
+        <tr>
+          <th
+            class="tableHeader"
+          >
+            <span>
+              organization
+            </span>
+            <img
+              alt="filter"
+              data-nimg="1"
+              decoding="async"
+              height="12"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=32&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 1x, /_next/image?url=%2Fimg.jpg&w=32&q=75 2x"
+              style="color: transparent;"
+              width="12"
+            />
+          </th>
+          <th
+            class="tableHeader"
+          >
+            <span>
+              username
+            </span>
+            <img
+              alt="filter"
+              data-nimg="1"
+              decoding="async"
+              height="12"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=32&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 1x, /_next/image?url=%2Fimg.jpg&w=32&q=75 2x"
+              style="color: transparent;"
+              width="12"
+            />
+          </th>
+          <th
+            class="tableHeader"
+          >
+            <span>
+              email
+            </span>
+            <img
+              alt="filter"
+              data-nimg="1"
+              decoding="async"
+              height="12"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=32&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 1x, /_next/image?url=%2Fimg.jpg&w=32&q=75 2x"
+              style="color: transparent;"
+              width="12"
+            />
+          </th>
+          <th
+            class="tableHeader"
+          >
+            <span>
+              phonenumber
+            </span>
+            <img
+              alt="filter"
+              data-nimg="1"
+              decoding="async"
+              height="12"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=32&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 1x, /_next/image?url=%2Fimg.jpg&w=32&q=75 2x"
+              style="color: transparent;"
+              width="12"
+            />
+          </th>
+          <th
+            class="tableHeader"
+          >
+            <span>
+              date joined
+            </span>
+            <img
+              alt="filter"
+              data-nimg="1"
+              decoding="async"
+              height="12"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=32&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 1x, /_next/image?url=%2Fimg.jpg&w=32&q=75 2x"
+              style="color: transparent;"
+              width="12"
+            />
+          </th>
+          <th
+            class="tableHeader"
+          >
+            <span>
+              status
+            </span>
+            <img
+              alt="filter"
+              data-nimg="1"
+              decoding="async"
+              height="12"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=32&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 1x, /_next/image?url=%2Fimg.jpg&w=32&q=75 2x"
+              style="color: transparent;"
+              width="12"
+            />
+          </th>
+          <th />
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+    <div
+      class="popover popover"
+    />
+  </div>
+</div>
+`;

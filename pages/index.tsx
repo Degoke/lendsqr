@@ -1,20 +1,18 @@
-import { GetStaticPropsContext } from "next";
-import Sidebar from "../containers/Sidebar";
-import Topbar from "../containers/Topbar";
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+import Spinner from '../components/Spinner'
+import { urls } from '../utils/constants/urls'
 
 export default function Home() {
+  const router = useRouter()
+
+  useEffect(() => {
+    router.push(urls.LOGIN)
+  }, [router])
+
   return (
-    <div>
-        <Topbar />
-        <Sidebar />
+    <div className="spin-container">
+      <Spinner />
     </div>
   )
-}
-
-export async function getStaticProps({locale}: GetStaticPropsContext) {
-  return {
-    props: {
-      messages: (await import(`../utils/messages/${locale}.json`)).default
-    }
-  };
 }

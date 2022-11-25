@@ -15,6 +15,14 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "__mocks__/fileMock.js",
+    "jest.setup.tsx",
+    "jest.config.js",
+    "__mocks__/styleMock.js"
+  ],
   "exclude": ["node_modules"]
 }

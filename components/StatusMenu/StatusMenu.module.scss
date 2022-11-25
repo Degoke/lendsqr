@@ -1,0 +1,37 @@
+@use '../../styles/variables' as *;
+
+.popover {
+  width: 160px;
+  left: 0;
+  top: 0;
+  margin-left: -5rem;
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    a {
+      text-decoration: none;
+      font-weight: inherit;
+    }
+
+    &_button {
+      border: none;
+      background: inherit;
+      font-weight: 500;
+      font-size: 14px;
+      color: $text-primary;
+
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    &_item {
+      padding: 0.5rem 0;
+    }
+  }
+}

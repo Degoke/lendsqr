@@ -1,0 +1,128 @@
+@use './variables' as *;
+
+.userDetails {
+  &__title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+
+    &_buttons {
+      display: flex;
+      align-items: center;
+      column-gap: 2rem;
+      row-gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    &_buttonRed {
+      border: 1px solid #e4033b;
+      border-radius: 8px;
+      height: 40px;
+      font-size: 14px;
+      text-transform: capitalize;
+      color: #e4033b;
+      background: none;
+      min-width: 150px;
+      font-weight: 600;
+    }
+
+    &_buttonGreen {
+      border: 1px solid #39cdcc;
+      border-radius: 8px;
+      height: 40px;
+      font-size: 14px;
+      text-transform: capitalize;
+      color: #39cdcc;
+      background: none;
+      min-width: 150px;
+      font-weight: 600;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+
+    &_name {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 2rem;
+
+      &_span {
+        font-size: 22px;
+        font-weight: 500;
+        color: $text-secondary;
+        display: block;
+      }
+
+      &_spanSmall {
+        font-size: 14px;
+        margin-top: 0.5rem;
+      }
+    }
+
+    &_image {
+      border-radius: 50%;
+    }
+
+    &_tier {
+      border-right: 1px solid #545f7d;
+      border-left: 1px solid #545f7d;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 1rem 2rem;
+    }
+
+    &_balanceGroup {
+      padding: 1rem 2rem;
+    }
+    &_imageGroup {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    &_balance {
+      font-weight: 500;
+      font-size: 22px;
+      display: block;
+    }
+
+    &_account {
+      font-size: 12px;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    font-size: 16px;
+    color: #000000cc;
+    text-align: center;
+
+    li {
+      padding: 1rem;
+    }
+
+    :first-child {
+      color: #39cdcc;
+      border-bottom: 2px solid #39cdcc;
+    }
+  }
+
+  &__paper {
+    margin-bottom: 2rem;
+  }
+}
+
+.paper {
+  padding: 2rem;
+}

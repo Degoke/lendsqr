@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination tests renders Pagination component unchanged 1`] = `
+<div>
+  <div
+    class="pagination"
+  >
+    <div>
+      <span>
+        Showing
+      </span>
+      <select>
+        <option
+          value="15"
+        >
+          15
+        </option>
+        <option
+          value="20"
+        >
+          20
+        </option>
+        <option
+          value="25"
+        >
+          25
+        </option>
+        <option
+          value="50"
+        >
+          50
+        </option>
+        <option
+          value="100"
+        >
+          100
+        </option>
+      </select>
+      <span>
+        Out of 
+        0
+      </span>
+    </div>
+    <ul>
+      <li>
+        <button
+          class="pagination__nextButton"
+        >
+          &lt;
+        </button>
+        <button
+          class="pagination__nextButton"
+        >
+          &gt;
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

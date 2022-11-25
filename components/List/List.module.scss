@@ -1,0 +1,13 @@
+.list {
+  margin: 1rem 0;
+
+  p {
+    padding: 0 1.5rem;
+    text-transform: capitalize;
+    margin-top: 1.5rem;
+
+    @media all and (max-width: 800px) {
+      display: none;
+    }
+  }
+}

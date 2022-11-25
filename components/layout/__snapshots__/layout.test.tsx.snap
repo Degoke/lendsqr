@@ -1,0 +1,611 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout tests renders Layout component unchanged 1`] = `
+<div>
+  <nav
+    class="topbar"
+  >
+    <div
+      class="topbar__logoSection"
+    >
+      <div>
+        <img
+          alt="lendsqr logo"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+      </div>
+      <form>
+        <input
+          placeholder="Search for something"
+          type="search"
+        />
+        <button
+          type="submit"
+        >
+          <img
+            alt="search button"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </button>
+      </form>
+    </div>
+    <div
+      class="topbar__actionButtons"
+    >
+      <p>
+        Docs
+      </p>
+      <button
+        class="iconButton"
+      >
+        <img
+          alt="Notifications Button"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+      </button>
+      <img
+        alt="user avatar"
+        class="dummyImage"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent;"
+        width="40"
+      />
+      <div
+        class="topbar__actionButtons_dropdown"
+      >
+        <span>
+          Adedeji
+        </span>
+        <button
+          class="iconButton"
+        >
+          <img
+            alt="user dropdown button"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </button>
+      </div>
+    </div>
+  </nav>
+  <aside
+    class="sidebar"
+  >
+    <div
+      class="sidebar__item"
+    >
+      <img
+        alt=""
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent;"
+        width="40"
+      />
+      <span>
+        switch organization
+      </span>
+      <img
+        alt=""
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent;"
+        width="40"
+      />
+    </div>
+    <div
+      class="sidebar__item"
+    >
+      <img
+        alt=""
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent;"
+        width="40"
+      />
+      <span>
+        dashboard
+      </span>
+    </div>
+    <div
+      class="list"
+    >
+      <p>
+        customers
+      </p>
+      <ul>
+        <li>
+          <a
+            class="item false"
+            href="/users"
+          >
+            <img
+              alt="users nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              users
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="guarantors nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              guarantors
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="loans nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              loans
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="decision models nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              decision models
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="savings nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              savings
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="loan requests nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              loan requests
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="whitelist nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              whitelist
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="karma nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              karma
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="list"
+    >
+      <p>
+        businesses
+      </p>
+      <ul>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="organization nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              organization
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="loan products nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              loan products
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="savings products nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              savings products
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="fees and charges nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              fees and charges
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="transactions nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              transactions
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="services nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              services
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="service accounts nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              service accounts
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="settlements nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              settlements
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="reports nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              reports
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="list"
+    >
+      <p>
+        settings
+      </p>
+      <ul>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="preferences nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              preferences
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="fees and pricing nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              fees and pricing
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="item current"
+            href=""
+          >
+            <img
+              alt="audit logs nav button"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+            <span>
+              audit logs
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <main
+    class="main"
+  >
+    <div
+      data-testid="mockComponent"
+    >
+      Hello World
+    </div>
+  </main>
+</div>
+`;

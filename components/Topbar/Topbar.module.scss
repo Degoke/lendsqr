@@ -1,0 +1,77 @@
+@use '../../styles/variables' as *;
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2vw;
+  background-color: $white-background;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+  z-index: 2;
+
+  &__logoSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8rem;
+
+    input {
+      border: 1px solid #213f7d;
+      border-radius: 8px;
+      height: 40px;
+      width: 25rem;
+      border-right: none;
+      padding: 1rem;
+    }
+
+    @media all and (max-width: 800px) {
+      input,
+      button {
+        display: none;
+      }
+    }
+
+    button {
+      height: 44px;
+      background: #39cdcc;
+      width: 56px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      margin-left: -2rem;
+      border: none;
+    }
+  }
+
+  &__actionButtons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-self: end;
+
+    p {
+      text-decoration: underline;
+    }
+
+    &_dropdown {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  @media all and (max-width: 800px) {
+    &__actionButtons {
+      display: none;
+    }
+  }
+}
+
+.dummyImage {
+  border-radius: 50%;
+}

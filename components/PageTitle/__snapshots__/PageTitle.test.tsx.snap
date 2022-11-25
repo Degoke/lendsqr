@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageTitle tests renders PageTitle component unchanged 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <h1>
+      Hello
+    </h1>
+  </div>
+</div>
+`;

@@ -1,7 +1,7 @@
-import { StaticImageData } from "next/image";
+import { StaticImageData } from 'next/image'
 
 export interface IListItem {
-    icon: StaticImageData
-    text: string
-    url: string
+  icon: StaticImageData
+  text: string
+  url: string
 }

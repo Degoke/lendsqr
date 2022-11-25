@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableHeader tests renders TableHeader component unchanged 1`] = `
+<div>
+  <th
+    class="tableHeader"
+  >
+    <span />
+    <img
+      alt="filter"
+      data-nimg="1"
+      decoding="async"
+      height="12"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=32&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 1x, /_next/image?url=%2Fimg.jpg&w=32&q=75 2x"
+      style="color: transparent;"
+      width="12"
+    />
+  </th>
+</div>
+`;

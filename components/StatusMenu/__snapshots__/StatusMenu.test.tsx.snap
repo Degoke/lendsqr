@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusMenu tests renders StatusMenu component unchanged 1`] = `
+<div>
+  <div
+    class="popover popover"
+  >
+    <div
+      class="paper undefined"
+    >
+      <ul
+        class="popover__menu"
+      />
+    </div>
+  </div>
+</div>
+`;

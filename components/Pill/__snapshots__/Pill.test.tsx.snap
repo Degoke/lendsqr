@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pill tests renders Pill component unchanged 1`] = `
+<div>
+  <div
+    class="pill inactive"
+  >
+    <p>
+      inactive
+    </p>
+  </div>
+</div>
+`;
