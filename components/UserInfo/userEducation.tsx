@@ -33,7 +33,7 @@ export default function UserEducation({ user }: Props) {
         </div>
         <div className={styles.userInfo__infoGroup}>
           <p>monthly income</p>
-          <p>{`₦${user.education.monthlyIncome[1]} - ₦${user.education.monthlyIncome[0]}`}</p>
+          <p>{`₦${user?.education.monthlyIncome[1]} - ₦${user?.education.monthlyIncome[0]}`}</p>
         </div>
         <div className={styles.userInfo__infoGroup}>
           <p>loan repayment</p>
