@@ -16,7 +16,9 @@ listenerMiddleware.startListening({
   effect: async (action, listenerApi) => {
     localStorage.setItem(
       'users',
-      JSON.stringify((listenerApi.getState() as RootState).users.data.users)
+      JSON.stringify(
+        (listenerApi.getState() as RootState).users.data.unfilteredUsers
+      )
     )
   },
 })

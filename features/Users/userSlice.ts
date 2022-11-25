@@ -39,10 +39,17 @@ export const userSlice = createSlice({
       const existingUser = state.data.users.find(
         (user) => user.id === action.payload
       )
+
+      const _existingUser = state.data.unfilteredUsers.find(
+        (user) => user.id === action.payload
+      )
       if (existingUser) {
         existingUser.status = 'active'
       }
-      console.log(state)
+
+      if (_existingUser) {
+        _existingUser.status = 'active'
+      }
     },
     blacklistUser(state, action) {
       const existingUser = state.data.users.find(
@@ -50,6 +57,14 @@ export const userSlice = createSlice({
       )
       if (existingUser) {
         existingUser.status = 'blacklisted'
+      }
+
+      const _existingUser = state.data.unfilteredUsers.find(
+        (user) => user.id === action.payload
+      )
+
+      if (_existingUser) {
+        _existingUser.status = 'blacklisted'
       }
     },
     updateFilters(state, action) {
