@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from 'next/image'
 import { HTMLAttributes } from 'react'
-import styles from './iconButton.module.scss'
+import styles from './IconButton.module.scss'
 
 interface Props extends HTMLAttributes<HTMLButtonElement> {
   image: StaticImageData
