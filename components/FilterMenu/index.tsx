@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react'
-import { getUsers, updateFilters } from '../../features/Users/userSlice'
-import { useAppDispatch } from '../../utils/hooks/useRedux'
+import {
+  getUsers,
+  selectOrganizations,
+  selectTotalUnfilteredUsers,
+  updateFilters,
+} from '../../features/Users/userSlice'
+import { useAppDispatch, useAppSelector } from '../../utils/hooks/useRedux'
 import { IUser, UserFilters } from '../../utils/types/user'
 import Popover from '../Popover'
 import styles from './FilterMenu.module.scss'
@@ -11,7 +16,6 @@ type Props = {
 }
 
 export default function FilterMenu({ isOpen, toggleFilterMenu }: Props) {
-  const [orgs, setOrgs] = useState<string[]>([])
   const [formData, setFormData] = useState<Record<UserFilters, string>>({
     userName: '',
     orgName: '',
@@ -23,16 +27,7 @@ export default function FilterMenu({ isOpen, toggleFilterMenu }: Props) {
 
   const dispatch = useAppDispatch()
 
-  useEffect(() => {
-    const users = JSON.parse(localStorage.getItem('users')!)
-    if (users) {
-      const organizations: string[] = Array.from(
-        new Set(users.map((user: IUser) => user.orgName))
-      )
-
-      setOrgs(organizations)
-    }
-  }, [])
+  const orgs = useAppSelector(selectOrganizations)
 
   const handleChange = (e: any) => {
     const name = e.currentTarget.name

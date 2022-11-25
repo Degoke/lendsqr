@@ -15,6 +15,7 @@ interface UserState {
   data: {
     users: IUser[]
     userDetails: IUser | null
+    unfilteredUsers: IUser[]
   }
 }
 
@@ -26,6 +27,7 @@ const initialState: UserState = {
   data: {
     users: [],
     userDetails: null,
+    unfilteredUsers: [],
   },
 }
 
@@ -75,6 +77,7 @@ export const userSlice = createSlice({
       .addCase(getUsers.fulfilled, (state, action) => {
         state.status.users = STATUS.SUCCESS
         state.data.users = action.payload
+        state.data.unfilteredUsers = action.payload
       })
       .addCase(getUsers.rejected, (state) => {
         state.status.users = STATUS.ERROR
@@ -141,11 +144,20 @@ export const selectUsers = (state: RootState, payload: any) => {
 export const selectTotalUsers = (state: RootState) =>
   state.users.data.users.length
 
+export const selectTotalUnfilteredUsers = (state: RootState) =>
+  state.users.data.unfilteredUsers.length
+
+export const selectOrganizations = (state: RootState) =>
+  state.users.data.unfilteredUsers.map((user: IUser) => user.orgName)
+
 export const selectActiveUsers = (state: RootState) =>
-  state.users.data.users.filter((user) => user.status === 'active').length
+  state.users.data.unfilteredUsers.filter((user) => user.status === 'active')
+    .length
 
 export const selectUsersWithLoans = (state: RootState) =>
-  state.users.data.users.filter((user) => !!user.education.loanRepayment).length
+  state.users.data.unfilteredUsers.filter(
+    (user) => !!user.education.loanRepayment
+  ).length
 
 export const selectUser = (state: RootState) => state.users.data.userDetails
 

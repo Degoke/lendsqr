@@ -15,6 +15,7 @@ import { useAppDispatch, useAppSelector } from '../utils/hooks/useRedux'
 import {
   getUsers,
   selectActiveUsers,
+  selectTotalUnfilteredUsers,
   selectTotalUsers,
   selectUsers,
   selectUserStatus,
@@ -51,6 +52,7 @@ function Users() {
   )
 
   const totalUsers = useAppSelector(selectTotalUsers)
+  const totalUnfilterdUsers = useAppSelector(selectTotalUnfilteredUsers)
   const activeUsers = useAppSelector(selectActiveUsers)
   const usersWithLoans = useAppSelector(selectUsersWithLoans)
 
@@ -68,7 +70,7 @@ function Users() {
     {
       image: UsersIcon,
       text: 'Users',
-      amount: totalUsers,
+      amount: totalUnfilterdUsers,
     },
     {
       image: ActiveIcon,
@@ -108,7 +110,7 @@ function Users() {
           />
         ))}
       </div>
-      <Paper>
+      <Paper className={styles.paper}>
         <Table users={users} toggleFilterMenu={toggleFilterMenu} />
       </Paper>
       <FilterMenu isOpen={openMenu} toggleFilterMenu={toggleFilterMenu} />
