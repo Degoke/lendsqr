@@ -2,53 +2,57 @@
 
 exports[`TableRow tests renders TableRow component unchanged 1`] = `
 <div>
-  <tr>
-    <td>
-      labore-dolor-et
-    </td>
-    <td>
-      Wilburn.Rice
-    </td>
-    <td>
-      Maverick.Hyatt83@gmail.com
-    </td>
-    <td>
-      (553) 208-0727 x31321
-    </td>
-    <td>
-      Tue Dec 27 2072
-    </td>
-    <td>
-      <div
-        class="pill pending"
-      >
-        <p>
-          pending
-        </p>
-      </div>
-    </td>
-    <td
-      class="tableRow__moreButton"
-    >
-      <button
-        class="iconButton"
-      >
-        <img
-          alt="more actions"
-          data-nimg="1"
-          decoding="async"
-          height="40"
-          loading="lazy"
-          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
-          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-          style="color: transparent;"
-          width="40"
-        />
-      </button>
-      <div
-        class="popover popover"
-      />
-    </td>
-  </tr>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          labore-dolor-et
+        </td>
+        <td>
+          Wilburn.Rice
+        </td>
+        <td>
+          Maverick.Hyatt83@gmail.com
+        </td>
+        <td>
+          (553) 208-0727 x31321
+        </td>
+        <td>
+          Tue Dec 27 2072
+        </td>
+        <td>
+          <div
+            class="pill pending"
+          >
+            <p>
+              pending
+            </p>
+          </div>
+        </td>
+        <td
+          class="tableRow__moreButton"
+        >
+          <button
+            class="iconButton"
+          >
+            <img
+              alt="more actions"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+          </button>
+          <div
+            class="popover popover"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 `;

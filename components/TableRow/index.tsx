@@ -55,25 +55,19 @@ export default function TableRow({ user }: Props) {
   ]
 
   return (
-    <>
-      <tr>
-        <td>{user?.orgName}</td>
-        <td>{user?.userName}</td>
-        <td>{user?.email}</td>
-        <td>{user?.phoneNumber}</td>
-        <td>{new Date(user?.createdAt).toDateString()}</td>
-        <td>
-          <Pill type={user?.status ?? 'pending'} />
-        </td>
-        <td className={styles.tableRow__moreButton}>
-          <IconButton
-            image={MoreIcon}
-            alt={'more actions'}
-            onClick={openMenu}
-          />
-          <StatusMenu items={items} id={user?.id} />
-        </td>
-      </tr>
-    </>
+    <tr>
+      <td>{user?.orgName}</td>
+      <td>{user?.userName}</td>
+      <td>{user?.email}</td>
+      <td>{user?.phoneNumber}</td>
+      <td>{new Date(user?.createdAt).toDateString()}</td>
+      <td>
+        <Pill type={user?.status ?? 'pending'} />
+      </td>
+      <td className={styles.tableRow__moreButton}>
+        <IconButton image={MoreIcon} alt={'more actions'} onClick={openMenu} />
+        <StatusMenu items={items} id={user?.id} />
+      </td>
+    </tr>
   )
 }

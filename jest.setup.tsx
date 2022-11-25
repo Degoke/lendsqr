@@ -6,6 +6,3 @@ jest.mock('next/router', () => require('next-router-mock'))
 export const mockProvider = (ui: React.ReactElement): React.ReactElement => {
   return <Provider store={store}>{ui}</Provider>
 }
-
-const useAppSelector = jest.fn
-const useAppDispatch = jest.fn

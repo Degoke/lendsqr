@@ -24,15 +24,14 @@ export default function FilterMenu({ isOpen, toggleFilterMenu }: Props) {
   const dispatch = useAppDispatch()
 
   useEffect(() => {
-    const organizations: string[] = Array.from(
-      new Set(
-        JSON.parse(localStorage.getItem('users')!).map(
-          (user: IUser) => user.orgName
-        )
+    const users = JSON.parse(localStorage.getItem('users')!)
+    if (users) {
+      const organizations: string[] = Array.from(
+        new Set(users.map((user: IUser) => user.orgName))
       )
-    )
 
-    setOrgs(organizations)
+      setOrgs(organizations)
+    }
   }, [])
 
   const handleChange = (e: any) => {

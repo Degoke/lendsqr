@@ -25,6 +25,11 @@
     text-align: center;
     font-size: $font-20;
     text-transform: uppercase;
+
+    &_span {
+      color: #39cdcc;
+      text-decoration: underline;
+    }
   }
 }
 

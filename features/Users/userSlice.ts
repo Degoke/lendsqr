@@ -53,7 +53,6 @@ export const userSlice = createSlice({
     updateFilters(state, action) {
       const filters = action.payload as any
       let newUsers = {} as any
-      let counter = 0
 
       Object.keys(filters).forEach((key) => {
         if (filters[key] !== '') {
@@ -61,7 +60,6 @@ export const userSlice = createSlice({
             const id: string = user.id
             if (user[key] === filters[key] && !newUsers[id]) {
               newUsers[id] = user
-              counter++
             }
           })
         }

@@ -4,7 +4,9 @@ import { mockCard, mockImage } from '../../__mocks__/dataMock'
 
 describe('Table tests', () => {
   it('renders Table component unchanged', () => {
-    const { container } = render(<Table users={[]} />)
+    const { container } = render(
+      <Table users={[]} toggleFilterMenu={jest.fn} />
+    )
     expect(container).toMatchSnapshot()
   })
 })

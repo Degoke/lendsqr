@@ -37,6 +37,12 @@ function Users() {
   }
 
   const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    dispatch(getUsers())
+    dispatch(updateCurrentStatusMenu(''))
+  }, [dispatch])
+
   const users = useAppSelector((state) =>
     selectUsers(state, {
       numberPerPage,
@@ -49,11 +55,6 @@ function Users() {
   const usersWithLoans = useAppSelector(selectUsersWithLoans)
 
   const userStatus = useAppSelector(selectUserStatus)
-
-  useEffect(() => {
-    dispatch(getUsers())
-    dispatch(updateCurrentStatusMenu(''))
-  }, [dispatch])
 
   const changeNumberPerPage = (e: ChangeEvent<HTMLSelectElement>) => {
     setNumberPerPage(Number(e.currentTarget.value))
@@ -108,11 +109,7 @@ function Users() {
         ))}
       </div>
       <Paper>
-        <Table
-          users={users}
-          toggleFilterMenu={toggleFilterMenu}
-          openMenu={openMenu}
-        />
+        <Table users={users} toggleFilterMenu={toggleFilterMenu} />
       </Paper>
       <FilterMenu isOpen={openMenu} toggleFilterMenu={toggleFilterMenu} />
       <Pagination

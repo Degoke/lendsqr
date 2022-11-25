@@ -7,11 +7,10 @@ import styles from './Table.module.scss'
 
 type Props = {
   users: IUser[]
-  openMenu: boolean
   toggleFilterMenu: () => void
 }
 
-export default function Table({ users, openMenu, toggleFilterMenu }: Props) {
+export default function Table({ users, toggleFilterMenu }: Props) {
   return (
     <div className={styles.container}>
       <table className={styles.table}>
@@ -39,13 +38,14 @@ export default function Table({ users, openMenu, toggleFilterMenu }: Props) {
         <tbody>
           {!users ||
             (users.length === 0 && (
-              <p className={styles.table__text}>
-                no available users{' '}
-                <button onClick={toggleFilterMenu}>Reset Filters</button> to
-                view users
-              </p>
+              <tr className={styles.table__text}>
+                <td>No users available</td>
+                <td>
+                  <button onClick={toggleFilterMenu}>Reset Filters</button>
+                </td>
+              </tr>
             ))}
-          {users &&
+          {users !== null &&
             users?.map((user) => <TableRow key={user.id} user={user} />)}
         </tbody>
       </table>

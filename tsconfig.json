@@ -19,10 +19,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "__mocks__/fileMock.js",
+    "__mocks__/fileMock.ts",
     "jest.setup.tsx",
     "jest.config.js",
-    "__mocks__/styleMock.js"
+    "__mocks__/styleMock.ts"
   ],
   "exclude": ["node_modules"]
 }
