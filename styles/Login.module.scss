@@ -13,6 +13,7 @@
       flex-direction: column;
       justify-content: center;
       padding-left: 10%;
+      padding-top: 5%;
 
       :first-child {
         margin-bottom: 8rem;
@@ -26,6 +27,10 @@
       justify-content: center;
       width: 70%;
       margin: auto;
+
+      @media all and (max-width: 600px) {
+        width: 90%;
+      }
 
       h1 {
         font-size: $font-40;
